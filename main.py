@@ -7,3 +7,18 @@
 
 #Write your code below this line 👇
 
+print("Welcome to the tip calculator")
+print("How was the bill: $")
+bill = float(input())
+
+print("What percentage tip would you like to give? 10, 12 or 15? ")
+bill_with_tip = (int(input()) / 100 * bill) + bill
+
+print("How many people to split the bill?: ")
+person = int(input())
+
+bill_by_person = (bill_with_tip / person)
+
+final_bill = round(bill_by_person, 2)
+
+print(f"Earch person should pay: ${final_bill}")
