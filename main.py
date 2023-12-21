@@ -17,8 +17,6 @@ bill_with_tip = (int(input()) / 100 * bill) + bill
 print("How many people to split the bill?: ")
 person = int(input())
 
-bill_by_person = (bill_with_tip / person)
-
-final_bill = round(bill_by_person, 2)
+final_bill = round((bill_with_tip / person), 2)
 
 print(f"Earch person should pay: ${final_bill}")
